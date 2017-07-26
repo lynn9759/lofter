@@ -1,0 +1,921 @@
+@charset "UTF-8";
+/*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects
+  /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a, span {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+/*提取函数*/
+/*设置高度 100%*/
+html, body, .root-swiper-container {
+  height: 100%;
+}
+
+/*设置顶级swiper*/
+.root-swiper-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.root-swiper-container > .swiper-wrapper {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.root-swiper-container > #root-swiper-pagination {
+  height: 1.40625rem;
+  position: static;
+}
+.root-swiper-container > #root-swiper-pagination span {
+  width: 20%;
+  margin: 0;
+  border-radius: 0;
+  height: 100%;
+  position: absolute;
+  font-size: 0.3125rem;
+  opacity: .5;
+}
+.root-swiper-container > #root-swiper-pagination span::before {
+  bottom: 0.21875rem;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+}
+.root-swiper-container > #root-swiper-pagination span:nth-of-type(1) {
+  left: 0;
+  background: url("../images/01.app-icons/bb_btn_home_select.png") no-repeat top center/0.59375rem 0.625rem;
+}
+.root-swiper-container > #root-swiper-pagination span:nth-of-type(1)::before {
+  content: "首页";
+}
+.root-swiper-container > #root-swiper-pagination span:nth-of-type(2) {
+  left: 20%;
+  background: url("../images/01.app-icons/bb_btn_label_select.png") no-repeat top center/0.79688rem 0.59375rem;
+}
+.root-swiper-container > #root-swiper-pagination span:nth-of-type(2)::before {
+  content: "发现";
+}
+.root-swiper-container > #root-swiper-pagination span:nth-of-type(3) {
+  right: 20%;
+  background: url("../images/01.app-icons/bb_btn_message_select.png") no-repeat top center/0.625rem 0.65625rem;
+}
+.root-swiper-container > #root-swiper-pagination span:nth-of-type(3)::before {
+  content: "消息";
+}
+.root-swiper-container > #root-swiper-pagination span:nth-of-type(4) {
+  right: 0;
+  background: url("../images/01.app-icons/bb_btn_account_select.png") no-repeat top center/0.625rem 0.625rem;
+}
+.root-swiper-container > #root-swiper-pagination span:nth-of-type(4)::before {
+  content: "我的";
+}
+.root-swiper-container > #root-swiper-pagination span.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+.root-swiper-container > .camera {
+  position: absolute;
+  width: 20%;
+  bottom: 0;
+  height: 1.40625rem;
+  left: 40%;
+  background: url("../images/01.app-icons/bb_btn_post_select.png") no-repeat center/1.29688rem 0.84375rem;
+}
+
+/*首页的swiper样式*/
+.slideA-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.slideA-container .slideA-pagination {
+  position: static;
+  height: 1.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.slideA-container .slideA-pagination span {
+  width: 3.34375rem;
+  height: 100%;
+  border-radius: 0;
+  margin: 0 !important;
+  font-size: 0.53125rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent !important;
+  opacity: 1 !important;
+}
+.slideA-container .slideA-pagination span:nth-of-type(1)::before {
+  content: "关注";
+}
+.slideA-container .slideA-pagination span:nth-of-type(2)::before {
+  content: "订阅";
+}
+.slideA-container .slideA-pagination span.swiper-pagination-bullet-active {
+  border-bottom: 0.03125rem solid yellowgreen;
+}
+.slideA-container > .swiper-wrapper {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.slideA-container > .swiper-wrapper > .swiper-slide {
+  height: auto;
+  overflow: scroll;
+}
+
+/*关注样式*/
+.slideA-container .follow-container {
+  background-color: #eeeeee;
+  height: 100%;
+}
+.slideA-container .follow-container .swiper-slide {
+  height: auto;
+  background-color: #fff;
+}
+.slideA-container .follow-container .swiper-slide img {
+  width: 100%;
+}
+
+/*订阅的样式*/
+.slideA-container > .swiper-wrapper > .swiper-slide:nth-child(2) {
+  background-color: #f2f5f4;
+  padding-top: 0.40625rem;
+}
+.slideA-container > .swiper-wrapper > .swiper-slide:nth-child(2) h2 {
+  font-size: 0.46875rem;
+  color: #828282;
+  height: 1.10938rem;
+  padding-left: 0.4375rem;
+  line-height: 1.10938rem;
+  font-weight: 400;
+  border-bottom: 1px solid #ebebeb;
+  background-color: white;
+}
+.slideA-container > .swiper-wrapper > .swiper-slide:nth-child(2) .items {
+  background-color: white;
+}
+.slideA-container > .swiper-wrapper > .swiper-slide:nth-child(2) .items .item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1.64063rem;
+}
+.slideA-container > .swiper-wrapper > .swiper-slide:nth-child(2) .items .item .left {
+  width: 1.96875rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.slideA-container > .swiper-wrapper > .swiper-slide:nth-child(2) .items .item .left a img {
+  width: 1.125rem;
+}
+.slideA-container > .swiper-wrapper > .swiper-slide:nth-child(2) .items .item .right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #ebebeb;
+}
+.slideA-container > .swiper-wrapper > .swiper-slide:nth-child(2) .items .item .right .pl p {
+  font-size: 0.3125rem;
+}
+.slideA-container > .swiper-wrapper > .swiper-slide:nth-child(2) .items .item .right .pl p:nth-child(1) {
+  color: #000;
+  margin-bottom: 0.28125rem;
+}
+.slideA-container > .swiper-wrapper > .swiper-slide:nth-child(2) .items .item .right .pl p:nth-child(2) {
+  color: #b3b3b3;
+}
+.slideA-container > .swiper-wrapper > .swiper-slide:nth-child(2) .items .item .right a {
+  display: block;
+  height: 0.76563rem;
+  width: 1.3125rem;
+  color: yellowgreen;
+  border: 1px solid yellowgreen;
+  border-radius: 0.39063rem;
+  font-size: 0.34375rem;
+  text-align: center;
+  line-height: 0.76563rem;
+  margin-right: 0.39063rem;
+}
+
+/*发现区域*/
+.slideB {
+  overflow: scroll;
+}
+.slideB .top {
+  padding: 0.1875rem 0.3125rem;
+  position: relative;
+}
+.slideB .top input {
+  width: 100%;
+  height: 0.9375rem;
+  background-color: #eeeeee;
+  padding-left: 2.5rem;
+  border-radius: 0.15625rem;
+}
+.slideB .top::before {
+  content: "";
+  position: absolute;
+  width: 0.53125rem;
+  height: 0.53125rem;
+  top: 0.73438rem;
+  left: 2.03125rem;
+  background: url("../images/01.app-icons/explore_search.png") no-repeat center/0.46875rem 0.46875rem;
+}
+.slideB .content {
+  background-color: #eeeeee
+  /*banner区*/
+  /*3d效果区*/
+  /*达人推荐区*/
+  /*更多达人*/
+  /*文章推荐*/
+}
+.slideB .content .slideB-banner a {
+  width: 100%;
+  display: block;
+}
+.slideB .content .slideB-banner a img {
+  width: 100%;
+}
+.slideB .content .slideB-coverflow {
+  height: 11.01563rem;
+  padding-top: 0.5625rem;
+  padding-bottom: 1.20313rem;
+}
+.slideB .content .slideB-coverflow > .swiper-wrapper > .coverflow-slide {
+  width: 7.6875rem;
+  height: 9.25rem;
+  background-color: white;
+  font-size: 3.125rem;
+  box-shadow: 0 0 0.15625rem #eee;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.slideB .content .slideB-coverflow > .swiper-wrapper > .coverflow-slide h4 {
+  text-align: center;
+  margin: 0.46875rem 0 0.51563rem;
+  font-size: 0.5625rem;
+}
+.slideB .content .slideB-coverflow > .swiper-wrapper > .coverflow-slide .items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.slideB .content .slideB-coverflow > .swiper-wrapper > .coverflow-slide .items img {
+  width: 50%;
+  height: 50%;
+  border: 1px solid white;
+}
+.slideB .content .master-container {
+  background-color: #fff;
+}
+.slideB .content .master-container h2 {
+  color: #969696;
+  padding-left: 0.48438rem;
+  font-size: 0.53125rem;
+  padding-top: 0.51563rem;
+  padding-bottom: 0.64063rem;
+}
+.slideB .content .master-container ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.slideB .content .master-container ul li {
+  width: 33.3333%;
+  padding-bottom: 0.64063rem;
+}
+.slideB .content .master-container ul li a {
+  width: 100%;
+  display: block;
+}
+.slideB .content .master-container ul li a img {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.slideB .content .master-container ul li a p {
+  font-size: 0.51563rem;
+  text-align: center;
+}
+.slideB .content .master-container ul li a p:nth-of-type(1) {
+  color: black;
+  padding: 0.26563rem 0;
+}
+.slideB .content .master-container ul li a p:nth-of-type(2) {
+  color: #9a9a9a;
+}
+.slideB .content a.more {
+  background-color: #fff;
+  height: 1.70313rem;
+  line-height: 1.70313rem;
+  border-top: 1px solid #dcdcdc;
+  color: #a1c30f;
+  width: 100%;
+  display: block;
+  font-size: 0.5625rem;
+  text-align: center;
+}
+.slideB .content .novel {
+  background-color: #fff;
+  margin-top: 0.625rem;
+}
+.slideB .content .novel h4 {
+  color: #969696;
+  padding-left: 0.48438rem;
+  font-size: 0.53125rem;
+  padding-top: 0.51563rem;
+  padding-bottom: 0.5rem;
+}
+.slideB .content .novel .items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.slideB .content .novel .items img {
+  width: 33.3333%;
+  height: 33.3333%;
+  border: 1px solid white;
+}
+
+/*我的*/
+.slideD .my-container {
+  background: url("../images/04.normal/self-bg.jpg") no-repeat center/100% 100%;
+  height: 100%;
+}
+.slideD .my-container .swiper-slide {
+  height: auto;
+}
+.slideD .my-container .swiper-slide .top {
+  height: 3.75rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.slideD .my-container .swiper-slide .top .top-left {
+  width: 3.125rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.slideD .my-container .swiper-slide .top .top-left img {
+  width: 2.23438rem;
+  height: 2.23438rem;
+  border-radius: 50%;
+}
+.slideD .my-container .swiper-slide .top .top-right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+}
+.slideD .my-container .swiper-slide .top .top-right h3 {
+  margin-top: 1.03125rem;
+  font-size: 0.46875rem;
+}
+.slideD .my-container .swiper-slide .top .top-right p {
+  margin: 0.3125rem 0;
+  color: #919598;
+  font-size: 0.3125rem;
+}
+.slideD .my-container .swiper-slide .top .top-right .top-box {
+  padding-right: 2.45313rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.slideD .my-container .swiper-slide .top .top-right .top-box a {
+  font-size: 0.40625rem;
+  color: black;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.slideD .my-container .swiper-slide img {
+  width: 100%;
+}
